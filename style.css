@@ -1,10 +1,9 @@
-
 body {
     background: hsl(0deg 0% 95%);
     margin: 0;
     padding: 0;
     font-size: 15px;
-    font-family: 'Lexend Deca' , sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
     color: hsl(0, 0%, 100%);
 }
 
@@ -32,7 +31,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     border-radius: 10px 0 0 10px;
-    gap:  1.5rem;
+    gap: 1.5rem;
 }
 
 .container-suvs {
@@ -41,7 +40,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     padding: 2rem;
-    gap:  1.5rem;
+    gap: 1.5rem;
 }
 
 .container-luxury {
@@ -51,7 +50,7 @@ body {
     flex-direction: column;
     padding: 2rem;
     border-radius: 0 10px 10px 0;
-    gap:  1.5rem;
+    gap: 1.5rem;
 }
 
 .title {
@@ -126,36 +125,38 @@ body {
     background: hsl(179, 100%, 13%);
 }
 
-@media (min-width: 599px) and (max-width:760px) {
-      
-    .container-3column{
-    grid-template-columns: repeat(auto-fit ,minmax(190px,30%));
- 
-  }
-  .btn{
-    margin: 10px;
-  }
+@media (min-width: 599px) and (max-width:850px) {
 
-  }
-
-  @media (max-width: 600px) {
-    .container{
-      height: 100%;
+    .container-3column {
+        grid-template-columns: repeat(auto-fit, minmax(190px, 30%));
     }
-    .container-3column{
-    grid-template-columns: repeat(auto-fit ,minmax(290px,50%));
-    margin-top:2.5rem;
-    margin-bottom:2.5rem;
 
-  }
-    .container-sedans{
-    border-radius: 10px 10px  0 0;
-  }
-  .container-luxury{
-    border-radius: 0 0 10px 10px;
+    .btn {
+        margin: 10px;
+    }
 
-  }
-  .btn{
-    margin: 0;
-  }
-  }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 100%;
+    }
+
+    .container-3column {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 50%));
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .container-sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container-luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .btn {
+        margin: 0;
+    }
+}
