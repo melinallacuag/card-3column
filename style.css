@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+body {
+    background: #123456;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Big+Shoulders+Display';
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    grid-template-columns: 100%;
+
+}
+
+.container-3column {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 18%));
+}
+
+.container-sedans {
+    background: hsl(31, 77%, 52%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px 0 0 10px;
+    gap: 1.5rem;
+}
+
+.container-suvs {
+    background: hsl(184, 100%, 22%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+
+}
+
+.container-luxury {
+    background: hsl(179, 100%, 13%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0 10px 10px 0;
+    gap: 1.5rem;
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 700;
+    margin: 0;
+}
+
+.description {
+    font-size: 400;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.btn {
+    font-weight: 600;
+    border-radius: 1.25rem;
+    border: transparent;
+    color: hsl(0, 0%, 100%);
+    padding: .8em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    width: 125px;
+    gap: 2rem;
+    transition: all 1s ease-in;
+    margin-top: 2.5rem;
+}
+
+.btn-orange {
+    background: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-orange:hover {
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    background: hsl(31, 77%, 52%);
+    transition: 2s ease;
+}
+
+.btn-cyan {
+    background: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-cyan:hover {
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    background: hsl(184, 100%, 22%);
+    transition: 2s ease;
+}
+
+.btn-dark-cyan {
+    background: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-dark-cyan:hover {
+    border: 2px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    background: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 100%;
+    }
+
+    .container-3column {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .container-sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container-luxury {
+        border-radius: 0 0 10px 10px;
+
+    }
+
+    .btn {
+        margin: 0;
+    }
+}
